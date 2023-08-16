@@ -1,0 +1,44 @@
+/* Override Bootstrap defaults */
+
+/* Center align text on the navbar */
+.navbar-nav {
+  justify-content: center;
+}
+
+/* Center align text in the main content */
+.text-center {
+  text-align: center;
+}
+
+/* Add margin to the bottom of the header */
+header {
+  margin-bottom: 2rem;
+}
+
+/* Add margin to the top and bottom of the main content */
+main {
+  margin: 4rem 0;
+}
+
+/* Style the "Learn more" button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Style the footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Add padding to the footer */
+footer {
+  padding: 1rem 0;
+}

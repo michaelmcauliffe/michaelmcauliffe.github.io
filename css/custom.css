@@ -13,4 +13,9 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
+/* Custom link color rule */
+.btn-link {
+  color: white;
+}
+
 /* Add more custom styling as needed */

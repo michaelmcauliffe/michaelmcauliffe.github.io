@@ -30,6 +30,11 @@ a:hover {
 .btn.btn-link:hover {
   color: #ff0000; /* Change to your desired color */
 }
+.white-logo {
+  filter: invert(100%); 
+  width: 300px; 
+  height: auto;
+}
 @media screen and (max-width: 600px) {
   body {
     text-align: center;

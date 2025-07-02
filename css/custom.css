@@ -35,6 +35,10 @@ a:hover {
   width: 300px; 
   height: auto;
 }
+.audiofeed-logo {
+  width: 200px; /* Adjust this value to make it smaller or larger */
+  height: auto;
+}
 @media screen and (max-width: 600px) {
   body {
     text-align: center;

@@ -51,10 +51,16 @@
         <a href="https://www.redscare.net" target="_blank" class="app-link">Website</a> |
         <a href="https://redscare.storenvy.com/" target="_blank" class="app-link">Store</a>
     </section>
-        <p class="lead">
-          <p>Contact: michael at spacejockeydev dot com</p>
+        <div class="lead contact-block">
+          <p>
+            Contact:
+            <button type="button" class="btn btn-link contact-trigger" id="contact-trigger">
+              Email
+            </button>
+            <span class="contact-email" id="contact-email" hidden></span>
+          </p>
           <a href="privacy-policy.html" class="btn btn-link">Privacy Policy</a>
-        </p>
+        </div>
       </div>
     </main>
 
@@ -64,6 +70,31 @@
       </div>
     </footer>
 
-    <script src="path/to/your/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        const trigger = document.getElementById("contact-trigger");
+        const output = document.getElementById("contact-email");
+
+        if (!trigger || !output) {
+          return;
+        }
+
+        const user = ["michael"].join("");
+        const domain = ["spacejockeydev", "com"].join(".");
+        const email = `${user}@${domain}`;
+
+        trigger.addEventListener("click", async () => {
+          output.textContent = email;
+          output.hidden = false;
+
+          try {
+            await navigator.clipboard.writeText(email);
+            trigger.textContent = "Copied";
+          } catch {
+            trigger.textContent = "Shown";
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

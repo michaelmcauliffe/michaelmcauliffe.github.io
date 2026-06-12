@@ -30,6 +30,17 @@ a:hover {
 .btn.btn-link:hover {
   color: #ff0000; /* Change to your desired color */
 }
+.contact-block p {
+  margin-bottom: 0.5rem;
+}
+.contact-trigger {
+  padding: 0;
+  vertical-align: baseline;
+}
+.contact-email {
+  margin-left: 0.5rem;
+  word-break: break-word;
+}
 .white-logo {
   filter: invert(100%); 
   width: 300px; 
